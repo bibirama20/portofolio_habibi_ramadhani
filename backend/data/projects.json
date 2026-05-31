@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Microjob Platform",
     "image": "/media/projects/microjob.png",
-    "description": "Platform digital untuk menghubungkan freelancer dengan klien pada pekerjaan mikro. Dibangun dengan Django REST Framework dan React sebagai bagian dari Tugas Akhir Pengembangan Startup Digital.",
+    "description": "Platform digital untuk menghubungkan freelancer dengan klien pada pekerjaan mikro. Dibangun dengan Django REST Framework dan React.",
     "technologies": ["Django", "React", "MySQL", "REST API", "Tailwind CSS"],
     "year": 2026
   },

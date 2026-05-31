@@ -1,22 +1,9 @@
-import { FaBrain } from 'react-icons/fa'
 import { HiCalendar, HiPhotograph } from 'react-icons/hi'
 import { useFetch } from '../hooks/useFetch'
 import ErrorState from '../components/ErrorState'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
-const AI_KEYWORDS = ['python', 'opencv', 'machine learning', 'ml', 'ai', 'data', 'scikit']
-
-function isAiProject(project) {
-  const haystack = [
-    project.title,
-    project.description,
-    ...(project.technologies ?? []),
-  ].join(' ').toLowerCase()
-  return AI_KEYWORDS.some(kw => haystack.includes(kw))
-}
-
 function ProjectCard({ project, delay = 0 }) {
-  const aiTag = isAiProject(project)
   return (
     <div className="reveal group glass-hover overflow-hidden flex flex-col
       hover:shadow-[0_8px_40px_rgba(99,102,241,0.2)] hover:-translate-y-2 transition-all duration-400"
@@ -33,15 +20,6 @@ function ProjectCard({ project, delay = 0 }) {
         {/* Dark overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-        {/* Badges */}
-        <div className="absolute top-3 left-3 flex gap-2">
-          {aiTag && (
-            <span className="flex items-center gap-1 px-2 py-1 rounded-lg
-              bg-violet-500/90 backdrop-blur-sm text-white text-[10px] font-bold">
-              <FaBrain size={9} /> AI / ML
-            </span>
-          )}
-        </div>
         <span className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded-lg
           bg-black/50 backdrop-blur-sm text-white text-[10px] font-semibold">
           <HiCalendar size={10} /> {project.year}
@@ -96,7 +74,7 @@ export default function Projects() {
             Academic <span className="gradient-text">Projects</span>
           </h2>
           <p className="mt-3 text-slate-500 dark:text-slate-400 text-sm">
-            Proyek akademik &amp; personal — termasuk implementasi AI/ML.
+            Proyek akademik &amp; personal.
           </p>
         </div>
 
