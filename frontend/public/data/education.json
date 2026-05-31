@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "institution": "Universitas Dian Nuswantoro",
+    "major": "S1 Informatika",
+    "start_year": 2023,
+    "end_year": null,
+    "description": "Menempuh pendidikan Strata 1 di bidang Informatika dengan fokus pada pengembangan perangkat lunak, rekayasa sistem, dan kecerdasan buatan."
+  },
+  {
+    "id": 2,
+    "institution": "SMA Negeri 1 Petarukan",
+    "major": "IPA",
+    "start_year": 2020,
+    "end_year": 2023,
+    "description": "Menyelesaikan pendidikan menengah atas dengan minat kuat di bidang teknologi dan pemrograman."
+  }
+]

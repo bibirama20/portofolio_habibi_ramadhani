@@ -1,0 +1,31 @@
+{
+  "hard_skills": [
+    { "name": "Python",           "category": "ai"     },
+    { "name": "Machine Learning", "category": "ai"     },
+    { "name": "OpenCV",           "category": "ai"     },
+    { "name": "Data Analysis",    "category": "ai"     },
+    { "name": "Scikit-learn",     "category": "ai"     },
+    { "name": "Django",           "category": "web"    },
+    { "name": "PHP",              "category": "web"    },
+    { "name": "Laravel",          "category": "web"    },
+    { "name": "React",            "category": "web"    },
+    { "name": "JavaScript",       "category": "web"    },
+    { "name": "HTML",             "category": "web"    },
+    { "name": "CSS",              "category": "web"    },
+    { "name": "Java",             "category": "web"    },
+    { "name": "MySQL",            "category": "tools"  },
+    { "name": "PostgreSQL",       "category": "tools"  },
+    { "name": "REST API",         "category": "tools"  },
+    { "name": "Git",              "category": "tools"  },
+    { "name": "GitHub",           "category": "tools"  },
+    { "name": "Docker",           "category": "tools"  }
+  ],
+  "soft_skills": [
+    "Problem Solving",
+    "Critical Thinking",
+    "Teamwork",
+    "Communication",
+    "Time Management",
+    "Adaptability"
+  ]
+}

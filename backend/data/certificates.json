@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "IBM DevOps and Software Engineering",
+    "issuer": "Coursera – IBM",
+    "year": 2026,
+    "image": "/media/cert-ibm-devops.png"
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning with Python",
+    "issuer": "Coursera – IBM",
+    "year": 2026,
+    "image": "/media/cert-ml-python.png"
+  },
+  {
+    "id": 3,
+    "title": "Exploratory Data Analysis for Machine Learning",
+    "issuer": "Coursera – IBM",
+    "year": 2025,
+    "image": "/media/cert-eda-ml.png"
+  },
+
+  {
+    "id": 4,
+    "title": "Belajar Dasar Data Science",
+    "issuer": "Dicoding Indonesia",
+    "year": 2024,
+    "image": "/media/cert-dicoding-ds.png"
+  }
+]

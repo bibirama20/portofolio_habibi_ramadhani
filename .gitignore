@@ -1,0 +1,29 @@
+# ── Folder foto asli (tidak perlu di-push) ──
+foto/
+
+# ── Python / Django ──
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.db
+db.sqlite3
+.env
+
+# ── Node / React ──
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+~$*
+
+# ── Editor ──
+.vscode/
+.idea/
+*.swp
