@@ -81,13 +81,19 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden absolute inset-x-0 top-full bg-white/95 dark:bg-[#02020a]/98 backdrop-blur-xl border-b border-slate-200/50 dark:border-white/[0.06] px-4 pb-5 pt-2 flex flex-col gap-1 animate-fade-in">
+        <div className={`md:hidden absolute inset-x-0 top-full backdrop-blur-xl border-b px-4 pb-5 pt-2 flex flex-col gap-1 animate-fade-in ${
+          dark ? 'bg-[#02020a]/98 border-white/[0.06]' : 'bg-white/95 border-slate-200/50'
+        }`}>
           {NAV_ITEMS.map(item => (
             <button key={item.id} onClick={() => { scrollTo(item.id); setOpen(false) }}
               className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                 active === item.id
-                  ? 'bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400'
-                  : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/[0.04]'
+                  ? dark
+                    ? 'bg-indigo-500/10 text-indigo-400'
+                    : 'bg-indigo-50 text-indigo-600'
+                  : dark
+                    ? 'text-slate-300 hover:bg-white/[0.04]'
+                    : 'text-slate-600 hover:bg-slate-50'
               }`}>
               {item.label}
             </button>
