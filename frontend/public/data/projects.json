@@ -14,5 +14,21 @@
     "description": "Sistem absensi otomatis berbasis pengenalan wajah menggunakan OpenCV dan Python. Dapat mendeteksi dan mengenali wajah secara real-time melalui kamera.",
     "technologies": ["Python", "OpenCV", "Django", "MySQL"],
     "year": 2026
+  },
+  {
+    "id": 3,
+    "title": "Sagara Course",
+    "image": "/media/projects/course-online.png",
+    "description": "Learning Management System dengan fitur enrollment kursus, tracking progres belajar, komentar, catatan, dan sertifikat kelulusan otomatis (PDF). Dibangun dengan Django 5.2 dan Django Ninja sebagai REST API berbasis Pydantic.",
+    "technologies": ["Django", "Django Ninja", "JWT Auth", "PostgreSQL"],
+    "year": 2026
+  },
+  {
+    "id": 4,
+    "title": "Helpdesk Ticketing System",
+    "image": "/media/projects/helpdesk-ticketing.png",
+    "description": "Sistem helpdesk terpadu untuk Dinas Komunikasi dan Informatika Kabupaten Demak, mencakup pengajuan, pelacakan, dan pengelolaan tiket layanan.",
+    "technologies": ["Laravel", "React", "PostgreSQL"],
+    "year": 2026
   }
 ]
