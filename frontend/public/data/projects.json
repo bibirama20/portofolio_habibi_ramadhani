@@ -34,5 +34,32 @@
     "technologies": ["Laravel", "React", "PostgreSQL"],
     "type": "Magang",
     "year": 2026
+  },
+  {
+    "id": 5,
+    "title": "Sistem Informasi Sekolah",
+    "image": "/media/projects/sistem-informasi-sekolah.png",
+    "description": "Sistem informasi sekolah dengan website profil publik (PPDB online, CMS berita/galeri) dan aplikasi tabungan siswa internal (transaksi, rekap, kartu tabungan PDF, manajemen pengguna berbasis peran). Dibangun dengan satu backend Django REST Framework dan dua frontend React terpisah.",
+    "technologies": ["Django REST Framework", "React", "TypeScript", "Tailwind CSS", "JWT Auth"],
+    "type": "Personal",
+    "year": 2026
+  },
+  {
+    "id": 6,
+    "title": "AksarasiaBot",
+    "image": "/media/projects/aksarasia-bot.png",
+    "description": "Chatbot Telegram dengan panel admin desktop untuk kelola member, auto-reply berbasis keyword, katalog produk (nama, harga, gambar), broadcast pesan ke member, dan log real-time pesan masuk/keluar.",
+    "technologies": ["Java", "Telegram Bot API", "Swing", "MySQL"],
+    "type": "Akademik",
+    "year": 2025
+  },
+  {
+    "id": 7,
+    "title": "UMKM Mapping",
+    "image": "/media/projects/umkm-mapping.png",
+    "description": "Direktori & peta interaktif UMKM kota berbasis Leaflet.js dan OpenStreetMap, dengan panel admin untuk kelola data UMKM (CRUD, upload foto, validasi CSRF). Dibangun dari nol dengan custom PHP MVC tanpa framework.",
+    "technologies": ["PHP", "MySQL", "Leaflet.js", "Bootstrap"],
+    "type": "Akademik",
+    "year": 2025
   }
 ]
