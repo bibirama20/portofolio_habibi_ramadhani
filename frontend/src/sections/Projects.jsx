@@ -1,9 +1,11 @@
-import { HiCalendar, HiPhotograph } from 'react-icons/hi'
+import { HiCalendar, HiPhotograph, HiBriefcase, HiAcademicCap } from 'react-icons/hi'
 import { useFetch } from '../hooks/useFetch'
 import ErrorState from '../components/ErrorState'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 function ProjectCard({ project, delay = 0 }) {
+  const isInternship = project.type === 'Magang'
+
   return (
     <div className="reveal group glass-hover overflow-hidden flex flex-col
       hover:shadow-[0_8px_40px_rgba(99,102,241,0.2)] hover:-translate-y-2 transition-all duration-400"
@@ -19,6 +21,14 @@ function ProjectCard({ project, delay = 0 }) {
         </div>
         {/* Dark overlay on hover */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+        {project.type && (
+          <span className={`absolute top-3 left-3 flex items-center gap-1 px-2 py-1 rounded-lg
+            backdrop-blur-sm text-white text-[10px] font-semibold
+            ${isInternship ? 'bg-emerald-600/80' : 'bg-indigo-600/80'}`}>
+            {isInternship ? <HiBriefcase size={10} /> : <HiAcademicCap size={10} />} {project.type}
+          </span>
+        )}
 
         <span className="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded-lg
           bg-black/50 backdrop-blur-sm text-white text-[10px] font-semibold">
@@ -71,7 +81,7 @@ export default function Projects() {
             <div className="h-px flex-1 max-w-[60px] bg-gradient-to-l from-transparent to-indigo-500/50" />
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-slate-800 dark:text-white">
-            Academic <span className="gradient-text">Projects</span>
+            My <span className="gradient-text">Projects</span>
           </h2>
           <p className="mt-3 text-slate-500 dark:text-slate-400 text-sm">
             Proyek akademik &amp; personal.
