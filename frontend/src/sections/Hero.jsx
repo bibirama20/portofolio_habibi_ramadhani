@@ -166,7 +166,8 @@ export default function Hero() {
         {/* Scroll down */}
         {!loading && !error && (
           <button onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-            className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-1.5
+            className="static mx-auto mt-10 w-fit md:absolute md:bottom-10 md:left-1/2 md:mt-0 md:w-auto md:-translate-x-1/2
+              flex flex-col items-center gap-1.5
               text-slate-400 hover:text-indigo-400 transition-colors animate-float">
             <span className="text-[10px] font-mono tracking-widest uppercase">scroll</span>
             <HiArrowDown size={16} />
